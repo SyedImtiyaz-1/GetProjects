@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightsteelblue;
+}
+
+.appbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-page .options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.page .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid #101460;
+  width: 80%; /* Adjust the width as needed for mobile and tablet */
+  max-width: 600px; /* Set a maximum width to avoid stretching on larger screens */
+}
+
+#email,
+#password {
+  width: 100%; /* Full width for mobile */
+}
+
+.input {
+  width: 100%; /* Full width for mobile */
+}
+
+.button {
+  width: 100%; /* Full width for mobile */
+}
+
+.all-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px auto; /* Center and provide some margin */
+  padding: 10px;
+  /* max-width: 1000px; Adjust the max-width based on your design */
+}
+
+.message {
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: rgb(218, 18, 18);
+}
+
+/* Media Queries for Tablet and Mobile */
+@media only screen and (max-width: 780px) {
+  .all-courses{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+  }
+}
+
+/* Media Queries for Tablet and Mobile */
+@media only screen and (max-width: 480px) {
+  .all-courses{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-left: 240px;
+    gap: 30px;
+  }
+}
