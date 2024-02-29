@@ -28,7 +28,7 @@ function LoginPage() {
       try {
         setIsLoading(true);
         const response = await axios.post(
-          "https://client-user-jthexgbce-syedimtiyaz-1.vercel.app/login",
+          "https://admin-eu2yphbj9-syedimtiyaz-1.vercel.app/login",
           {
             username: admin.email,
             password: admin.password,
